@@ -29,5 +29,9 @@ class TaskViewModel: ObservableObject {
         print("Removing task: \(task.name)")
         tasks.removeAll { $0.id == task.id }
     }
+    
+    func editTask(task: Task) {
+        print(task.name)
+    }
 }
 

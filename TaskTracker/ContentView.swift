@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var taskVM = TaskViewModel()  // ViewModel instance
-    @State private var newTaskName = ""  // Holds new task name
-    @State private var newTaskGoal = ""  // Holds new task goal (in hours)
+    @State private var newTaskName = ""
+    @State private var newTaskGoal = ""
 
     var body: some View {
         NavigationView {
@@ -41,7 +41,7 @@ struct ContentView: View {
                     TaskRowView(task: task, taskVM: taskVM)
                 }
             }
-            .navigationTitle("Task Tracker")
+            .navigationTitle("Weekly Task Tracker")
         }
     }
 }
